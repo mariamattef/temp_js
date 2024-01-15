@@ -20,7 +20,7 @@ element.classList.add("active");
 
 
 //Toggle class spin on icon
-let toggle =document.querySelector('.toggle .icon'); 
+let toggle =document.querySelector('.toggle'); 
 let move = document.querySelector('.settings-box');
 toggle.onclick=function(){
     this.classList.toggle('fa-spin');
@@ -73,7 +73,7 @@ localStorage.setItem("color-options",e.target.dataset.color);
         }
           
         // Remove Active Class from All Span
-let spanBackground =document.querySelectorAll(".random-backgrounds span");
+let spanBackground = document.querySelectorAll(".random-backgrounds span");
 
  spanBackground.forEach(element=>{
             element.classList.remove("active");
